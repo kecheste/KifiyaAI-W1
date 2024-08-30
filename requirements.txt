@@ -3,3 +3,4 @@ matplotlib
 nltk
 vaderSentiment
 scikit-learn
+yfinance
