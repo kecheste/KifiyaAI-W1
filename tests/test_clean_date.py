@@ -1,5 +1,4 @@
 import unittest
-import re
 from scripts.helper import clean_date
 
 class TestCleanDate(unittest.TestCase):
