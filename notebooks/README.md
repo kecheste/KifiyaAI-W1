@@ -136,3 +136,51 @@ You can install these libraries using pip:
 ```bash
 pip install pandas numpy matplotlib TA-Lib PyNance
 ```
+
+## 3: Correlation Between News and Stock Movement
+
+### Overview
+
+In this task, we analyze the correlation between news sentiment and stock price movements. By aligning news headlines with stock trading days and conducting sentiment analysis, we aim to determine if there is a measurable relationship between the sentiment of news articles and the movement of stock prices.
+
+### Datasets
+
+We use two primary datasets:
+
+- **News Data**: Contains news headlines with timestamps.
+- **Stock Price Data**: Contains historical stock prices, including the `Date`, `Close`, and other relevant financial data.
+
+### Steps for Analysis
+
+#### 1. Data Preparation
+
+- **Normalize Dates**: Convert and align dates in both news and stock datasets to ensure that each news item is correctly matched with the corresponding stock trading day.
+- **Sentiment Analysis**: Perform sentiment analysis on news headlines using a Python library like `nltk` or `TextBlob` to assign sentiment scores (positive, negative, or neutral) to each article.
+- **Aggregate Sentiments**: If multiple articles appear on the same day, compute the average sentiment score for that day.
+
+#### 2. Calculate Stock Movements
+
+- **Compute Daily Returns**: Calculate the daily percentage changes in stock closing prices to represent the daily stock movements.
+
+#### 3. Correlation Analysis
+
+- **Determine Correlation**: Calculate the Pearson correlation coefficient to analyze the relationship between the average daily sentiment scores and daily stock returns. This helps in understanding whether the sentiment from news articles is associated with stock price movements.
+
+#### 4. Visualization
+
+- **Scatter Plots**: Create scatter plots to visualize the correlation between sentiment scores and daily stock returns. This will help in visually assessing any patterns or trends.
+
+### Prerequisites
+
+Ensure you have the following Python libraries installed:
+
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `nltk` or `TextBlob` (for sentiment analysis)
+
+You can install these libraries using pip:
+
+```bash
+pip install pandas numpy matplotlib nltk textblob
+```
